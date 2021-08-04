@@ -1,2 +1,6 @@
 Main.Prg
 chamaTelas.Prg
+controller_cadastro.Prg
+controller_grid.Prg
+controller_historico.Prg
+model_netassoc.Prg
