@@ -3,4 +3,5 @@ chamaTelas.Prg
 controller_cadastro.Prg
 controller_grid.Prg
 controller_historico.Prg
+grid_contatos_form_oninit.prg
 model_netassoc.Prg

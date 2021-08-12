@@ -6,8 +6,8 @@ DEFINE WINDOW TEMPLATE AT 161 , 415 WIDTH 871 HEIGHT 563 VIRTUAL WIDTH Nil VIRTU
     DEFINE MAIN MENU
         DEFINE POPUP "Cadastro"
             MENUITEM "Inclusão" ACTION showInclusao()
-            MENUITEM "Alteração" ACTION mostra_grid_contato()
-            MENUITEM "Histórico" ACTION mostra_grid_contato()
+            MENUITEM "Alteração" ACTION mostra_grid_contato("A")
+            MENUITEM "Histórico" ACTION mostra_grid_contato("H")
         END POPUP
         DEFINE POPUP "Relatório"
             MENUITEM "Arquivo HTML" ACTION imprHtml()
