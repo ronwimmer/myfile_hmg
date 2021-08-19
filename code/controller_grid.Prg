@@ -47,8 +47,29 @@ function inicia_grid()
 	
 return NIL
 
-function carrega_grid_ctrl( aGrid )
+function carrega_grid_ctrl( aGrid, cPesquisa, nChave )
 
-	carrega_grid( @aGrid )
+	carrega_grid( @aGrid, cPesquisa, nChave )
 
+return NIL
+
+function filtra_grid()
+
+	local cPesquisa
+	local nChave
+	local aGrid := {}
+	local nI := 0
+	
+	cPesquisa := alltrim( getProperty("grid_contatos","Text_pesquisa","Value") )
+	nChave    := getProperty("grid_contatos","Combo_pesquisa","Value")
+	
+	carrega_grid_ctrl( @aGrid, cPesquisa, nChave )
+
+	doMethod("grid_contatos","Grid_contatos","DeleteAllItems")
+	if len( aGrid ) > 0
+		for nI := 1 to len( aGrid )
+			doMethod("grid_contatos","Grid_contatos","AddItem", aClone(aGrid[nI]))
+		next
+	endif
+	
 return NIL

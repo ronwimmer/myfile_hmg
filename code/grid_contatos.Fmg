@@ -33,14 +33,14 @@ DEFINE WINDOW TEMPLATE AT 149 , 307 WIDTH 829 HEIGHT 463 VIRTUAL WIDTH Nil VIRTU
         FONTNAME "Arial"
         FONTSIZE 9
         TOOLTIP ""
-        ONCHANGE Nil
+        ONCHANGE grid_contatos_text_pesquisa_onchange()
         ONGOTFOCUS Nil
         ONLOSTFOCUS Nil
         FONTBOLD .F.
         FONTITALIC .F.
         FONTUNDERLINE .F.
         FONTSTRIKEOUT .F.
-        ONENTER Nil
+        ONENTER grid_contatos_text_pesquisa_onenter()
         HELPID Nil
         TABSTOP .T.
         VISIBLE .T.
@@ -62,7 +62,7 @@ DEFINE WINDOW TEMPLATE AT 149 , 307 WIDTH 829 HEIGHT 463 VIRTUAL WIDTH Nil VIRTU
         WIDTH  150
         HEIGHT 90
         ITEMS {"ID","Nome","Empresa","Endereço","Cidade","Estado","Documento","Aniversário"}
-        VALUE 0
+        VALUE 1
         FONTNAME "Arial"
         FONTSIZE 9
         TOOLTIP ""
@@ -91,7 +91,7 @@ DEFINE WINDOW TEMPLATE AT 149 , 307 WIDTH 829 HEIGHT 463 VIRTUAL WIDTH Nil VIRTU
         COL    690
         WIDTH  100
         HEIGHT 25
-        ACTION Nil
+        ACTION grid_contatos_button_pesquisa_action()
         CAPTION "Pesquisa"
         FONTNAME "Arial"
         FONTSIZE 9
