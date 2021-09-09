@@ -1,10 +1,13 @@
 Main.Prg
 chamaTelas.Prg
+contato_form_oninit.prg
 controller_cadastro.Prg
 controller_grid.Prg
 controller_historico.Prg
+grid_contatos_button_alterar_action.prg
 grid_contatos_button_pesquisa_action.prg
 grid_contatos_form_oninit.prg
 grid_contatos_text_pesquisa_onchange.prg
 grid_contatos_text_pesquisa_onenter.prg
+main_form_oninit.prg
 model_netassoc.Prg

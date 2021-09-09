@@ -86,3 +86,6 @@ function carrega_grid( aGrid, cPesquisa, nChave )
 	enddo
 	
 return NIL
+
+function posiciona_selecionado()
+return NETASSOC->( dbSeek( cIdSelecionado ))
