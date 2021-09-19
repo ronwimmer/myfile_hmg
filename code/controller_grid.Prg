@@ -89,3 +89,9 @@ function carrega_contato()
 	endif
 
 return NIL
+
+function fecha_grid()
+
+	fecha_arquivo()
+	
+return NIL

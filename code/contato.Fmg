@@ -904,7 +904,7 @@ DEFINE WINDOW TEMPLATE AT 42 , 364 WIDTH 613 HEIGHT 570 VIRTUAL WIDTH Nil VIRTUA
         COL    460
         WIDTH  120
         HEIGHT 30
-        ACTION Nil
+        ACTION contato_button_salvar_action()
         CAPTION "Salvar"
         FONTNAME "Arial"
         FONTSIZE 9
@@ -930,7 +930,7 @@ DEFINE WINDOW TEMPLATE AT 42 , 364 WIDTH 613 HEIGHT 570 VIRTUAL WIDTH Nil VIRTUA
         COL    460
         WIDTH  120
         HEIGHT 30
-        ACTION Nil
+        ACTION contato_button_ignorar_action()
         CAPTION "Ignorar"
         FONTNAME "Arial"
         FONTSIZE 9

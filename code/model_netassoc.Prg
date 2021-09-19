@@ -4,7 +4,7 @@ function abre_arquivo()
 
 	dbUseArea( .T., "DBFNTX", "NETASSOC" )
 	NETASSOC->( dbSetIndex( "MK_ASS" ))
-	NETASSOC->( dbSetIndex( "NK_ASS" ))
+	//NETASSOC->( dbSetIndex( "NK_ASS" ))
 	
 return NIL
 
@@ -89,3 +89,49 @@ return NIL
 
 function posiciona_selecionado()
 return NETASSOC->( dbSeek( cIdSelecionado ))
+
+function carrega_limpo()
+
+	NETASSOC->( dbGoBottom() )
+	NETASSOC->( dbSkip() )
+	alimenta_form()
+	
+return NIL
+
+function grava_dados( aDados )
+
+	local lSucesso := .F.
+
+	if empty( aDados[01] )
+		NETASSOC->( dbGoBottom() )
+		aDados[01] := str( val( NETASSOC->IDCHAVE ) + 1, 7 )
+		aDados[16] := dtoc( date() )
+		aDados[17] := aDados[16] + " ... " + aDados[17]
+		lSucesso := NETASSOC->( dbAppend() )
+	else
+		lSucesso := NETASSOC->( RLock() )
+	end if
+	
+	if lSucesso
+		NETASSOC->IDCHAVE    := aDados[01]
+		NETASSOC->RAZAO      := aDados[02]
+		NETASSOC->NOME       := aDados[03]
+		NETASSOC->DT_NASC    := dtoc( ctod( alltrim( aDados[04] )))
+		NETASSOC->DOCUMENTO  := aDados[05]
+		NETASSOC->END_RUA    := aDados[06]
+		NETASSOC->END_BAIRRO := aDados[07]
+		NETASSOC->END_CIDADE := aDados[08]
+		NETASSOC->END_CEP    := aDados[09]
+		NETASSOC->END_UF     := aDados[10]
+		NETASSOC->FONE_RES   := aDados[11]
+		NETASSOC->FONE_CEL   := aDados[12]
+		NETASSOC->END_EMAIL  := aDados[13]
+		NETASSOC->WEB_SITE   := aDados[14]
+		NETASSOC->NUM_ICQ    := aDados[15]
+		NETASSOC->CADASTRO   := dtoc( ctod( alltrim( aDados[16] )))
+		NETASSOC->DETALHE    := aDados[17]
+		
+		NETASSOC->( dbUnlock() )
+	endif
+
+return lSucesso

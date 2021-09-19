@@ -7,5 +7,6 @@ Function main_form_oninit
 	public cIdSelecionado := ""
 	
 	set century on
+	set date british
 
 Return Nil
