@@ -3,6 +3,7 @@ chamaTelas.Prg
 contato_button_ignorar_action.prg
 contato_button_salvar_action.prg
 contato_form_oninit.prg
+contato_form_onrelease.prg
 controller_cadastro.Prg
 controller_grid.Prg
 controller_historico.Prg
