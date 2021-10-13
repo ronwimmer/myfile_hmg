@@ -8,6 +8,7 @@ controller_cadastro.Prg
 controller_grid.Prg
 controller_historico.Prg
 grid_contatos_button_alterar_action.prg
+grid_contatos_button_historico_action.prg
 grid_contatos_button_pesquisa_action.prg
 grid_contatos_form_oninit.prg
 grid_contatos_form_onrelease.prg

@@ -90,6 +90,22 @@ function carrega_contato()
 
 return NIL
 
+function carrega_historico()
+
+	local nItem  := 0
+	local aDados := {}
+	
+	cIdSelecionado := ""
+	nItem := getProperty("grid_contatos","Grid_contatos","Value")
+	
+	if nItem > 0
+		aDados := getProperty("grid_contatos","Grid_contatos","Item",nItem)
+		cIdSelecionado := aDados[1]
+		mostra_historico()
+	endif
+
+return NIL
+
 function fecha_grid()
 
 	fecha_arquivo()

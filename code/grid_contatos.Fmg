@@ -193,7 +193,7 @@ DEFINE WINDOW TEMPLATE AT 149 , 307 WIDTH 829 HEIGHT 463 VIRTUAL WIDTH Nil VIRTU
         COL    580
         WIDTH  100
         HEIGHT 28
-        ACTION Nil
+        ACTION grid_contatos_button_historico_action()
         CAPTION "Histórico"
         FONTNAME "Arial"
         FONTSIZE 9
