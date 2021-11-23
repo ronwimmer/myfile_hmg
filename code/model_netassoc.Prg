@@ -113,25 +113,45 @@ function grava_dados( aDados )
 	end if
 	
 	if lSucesso
-		NETASSOC->IDCHAVE    := aDados[01]
-		NETASSOC->RAZAO      := aDados[02]
-		NETASSOC->NOME       := aDados[03]
-		NETASSOC->DT_NASC    := dtoc( ctod( alltrim( aDados[04] )))
-		NETASSOC->DOCUMENTO  := aDados[05]
-		NETASSOC->END_RUA    := aDados[06]
-		NETASSOC->END_BAIRRO := aDados[07]
-		NETASSOC->END_CIDADE := aDados[08]
-		NETASSOC->END_CEP    := aDados[09]
-		NETASSOC->END_UF     := aDados[10]
-		NETASSOC->FONE_RES   := aDados[11]
-		NETASSOC->FONE_CEL   := aDados[12]
-		NETASSOC->END_EMAIL  := aDados[13]
-		NETASSOC->WEB_SITE   := aDados[14]
-		NETASSOC->NUM_ICQ    := aDados[15]
-		NETASSOC->CADASTRO   := dtoc( ctod( alltrim( aDados[16] )))
-		NETASSOC->DETALHE    := aDados[17]
+		if len( aDados ) == 17
+			NETASSOC->IDCHAVE    := aDados[01]
+			NETASSOC->RAZAO      := aDados[02]
+			NETASSOC->NOME       := aDados[03]
+			NETASSOC->DT_NASC    := dtoc( ctod( alltrim( aDados[04] )))
+			NETASSOC->DOCUMENTO  := aDados[05]
+			NETASSOC->END_RUA    := aDados[06]
+			NETASSOC->END_BAIRRO := aDados[07]
+			NETASSOC->END_CIDADE := aDados[08]
+			NETASSOC->END_CEP    := aDados[09]
+			NETASSOC->END_UF     := aDados[10]
+			NETASSOC->FONE_RES   := aDados[11]
+			NETASSOC->FONE_CEL   := aDados[12]
+			NETASSOC->END_EMAIL  := aDados[13]
+			NETASSOC->WEB_SITE   := aDados[14]
+			NETASSOC->NUM_ICQ    := aDados[15]
+			NETASSOC->CADASTRO   := dtoc( ctod( alltrim( aDados[16] )))
+			NETASSOC->DETALHE    := aDados[17]
+		else
+			NETASSOC->DETALHE    := aDados[03]
+		endif
 		
 		NETASSOC->( dbUnlock() )
 	endif
 
 return lSucesso
+
+function carrega_relat( aDados )
+
+	local aRegistro := {}
+	
+	aDados := {}
+	
+	NETASSOC->( dbGotop() )
+	while ! NETASSOC->( eof() )
+		le_dados( @aRegistro )
+		aAdd( aDados, aRegistro )
+	
+		NETASSOC->( dbSkip() )
+	enddo
+
+return NIL

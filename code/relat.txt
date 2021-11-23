@@ -1,0 +1,146 @@
+
+23/11/2021 - Listagem de Contatos Cadastrados
+--------------------------------------------------------------------------------
+ Chave ID:       1 Documento: 
+Data Aniv: 04/07/1967
+  Contato: RONALDO
+  Empresa: 
+ Endereco: RUA DO SOBE E DESCE 175
+            - Sao Paulo
+           SP - 01000-000
+   Fone_1: (11) 99999-8888
+   Fone_2: 
+   e-mail: EMAIL@TESTE.COM.BR
+    Skype: SKPTESTE
+     Site: WWW.TESTE.COM.BR
+--------------------------------------------------------------------------------
+ Chave ID:       2 Documento: 
+Data Aniv: 10/05/1980
+  Contato: CLAUDIA
+  Empresa: TESTE LTDA.
+ Endereco: RUA DE TESTE, 45
+            - Sao Paulo
+           SP - 01000-000
+   Fone_1: 
+   Fone_2: 
+   e-mail: 
+    Skype: 
+     Site: 
+--------------------------------------------------------------------------------
+ Chave ID:       3 Documento: 
+Data Aniv:   /  /    
+  Contato: Terceiro Contato
+  Empresa: empresa 03
+ Endereco: 
+            - Sao Paulo
+            -          
+   Fone_1: 
+   Fone_2: 
+   e-mail: 
+    Skype: 
+     Site: 
+--------------------------------------------------------------------------------
+ Chave ID:       4 Documento: 
+Data Aniv: 03/07/2001
+  Contato: contato 04
+  Empresa: Empresa do contato 04
+ Endereco: 
+            - Sao Paulo
+            -          
+   Fone_1: 
+   Fone_2: 
+   e-mail: 
+    Skype: 
+     Site: 
+--------------------------------------------------------------------------------
+ Chave ID:       5 Documento: 11.222.333
+Data Aniv: 01/01/1990
+  Contato: contato 05
+  Empresa: empresa 05
+ Endereco: rua da empresa 05
+           bairro 05 - Sao Paulo
+           SP - 01000-000
+   Fone_1: (11) 1111-2222
+   Fone_2: (11) 91111-2222
+   e-mail: teste@teste.com.br
+    Skype: meuskype
+     Site: www.teste.com.br
+--------------------------------------------------------------------------------
+ Chave ID:       6 Documento: 
+Data Aniv:   /  /    
+  Contato: teste 6
+  Empresa: Empresa do contato 06
+ Endereco: 
+            - Sao Paulo
+            -          
+   Fone_1: 
+   Fone_2: 
+   e-mail: 
+    Skype: 
+     Site: 
+--------------------------------------------------------------------------------
+ Chave ID:       7 Documento: 
+Data Aniv:   /  /    
+  Contato: teste 7
+  Empresa: Empresa do contato 07
+ Endereco: 
+            - Sao Paulo
+            -          
+   Fone_1: 
+   Fone_2: 
+   e-mail: 
+    Skype: 
+     Site: 
+--------------------------------------------------------------------------------
+ Chave ID:       8 Documento: 
+Data Aniv:   /  /    
+  Contato: teste 8
+  Empresa: 
+ Endereco: 
+            - Sao Paulo
+            -          
+   Fone_1: 
+   Fone_2: 
+   e-mail: 
+    Skype: 
+     Site: 
+--------------------------------------------------------------------------------
+ Chave ID:       9 Documento: 
+Data Aniv:   /  /    
+  Contato: teste 9
+  Empresa: 
+ Endereco: 
+            - Sao Paulo
+            -          
+   Fone_1: 
+   Fone_2: 
+   e-mail: 
+    Skype: 
+     Site: 
+--------------------------------------------------------------------------------
+ Chave ID:      10 Documento: 22.333.444
+Data Aniv: 01/01/1985
+  Contato: contato novo
+  Empresa: contato-me
+ Endereco: endereco do contato
+           bairro do contato - São Paulo
+           SP - 01000-010
+   Fone_1: (11) 2222-3333
+   Fone_2: (11) 93333-4444
+   e-mail: contato.novo@teste.com.br
+    Skype: meuskypenovo
+     Site: teste.com.br
+--------------------------------------------------------------------------------
+ Chave ID:      11 Documento: 
+Data Aniv: 30/09/2000
+  Contato: Mais um contato
+  Empresa: Empresa do contato "mais um contato"
+ Endereco: 
+            - 
+            -          
+   Fone_1: 
+   Fone_2: 
+   e-mail: 
+    Skype: 
+     Site: 
+--------------------------------------------------------------------------------
