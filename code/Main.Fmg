@@ -15,5 +15,31 @@ DEFINE WINDOW TEMPLATE AT 161 , 415 WIDTH 871 HEIGHT 563 VIRTUAL WIDTH Nil VIRTU
         END POPUP
     END MENU
 
+    DEFINE BUTTON Button_teste_conexa
+        ROW    90
+        COL    60
+        WIDTH  100
+        HEIGHT 28
+        ACTION main_button_teste_conexa_action()
+        CAPTION "Teste Conexão"
+        FONTNAME "Arial"
+        FONTSIZE 9
+        TOOLTIP ""
+        FONTBOLD .F.
+        FONTITALIC .F.
+        FONTUNDERLINE .F.
+        FONTSTRIKEOUT .F.
+        ONGOTFOCUS Nil
+        ONLOSTFOCUS Nil
+        HELPID Nil
+        FLAT .F.
+        TABSTOP .T.
+        VISIBLE .T.
+        TRANSPARENT .F.
+        MULTILINE .F.
+        PICTURE Nil
+        PICTALIGNMENT TOP
+    END BUTTON
+
 END WINDOW
 

@@ -22,5 +22,7 @@ historico_form_onrelease.prg
 impressao_button_cancela_action.prg
 impressao_button_imprime_action.prg
 impressao_form_oninit.prg
+main_button_teste_conexa_action.prg
 main_form_oninit.prg
 model_netassoc.Prg
+mysql.prg
