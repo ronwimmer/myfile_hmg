@@ -15,11 +15,36 @@ function mostra_contato()
 
 return NIL
 
-function alimenta_form()
+function alimenta_form( cLimpo )
 
 	local aDados := {}
-	
-	le_dados( @aDados )
+	local aDados1 := {}
+
+	if cLimpo == NIL
+		le_dados( @aDados1 )
+		aDados := aDados1[01]
+
+	elseif cLimpo == "limpo"
+		aDados := Array(17)
+
+		aDados[01] := Space(7)
+		aDados[02] := Space(40)
+		aDados[03] := Space(40)
+		aDados[04] := Space(10)
+		aDados[05] := Space(40)
+		aDados[06] := Space(40)
+		aDados[07] := Space(30)
+		aDados[08] := Space(30)
+		aDados[09] := Space(9)
+		aDados[10] := Space(22)
+		aDados[11] := Space(30)
+		aDados[12] := Space(30)
+		aDados[13] := Space(45)
+		aDados[14] := Space(44)
+		aDados[15] := Space(45)
+		aDados[16] := Space(10)
+		aDados[17] := Space(100)
+	endif
 
 	setProperty("contato", "Text_idchave"         , "Value", aDados[01] )
 	setProperty("contato", "Text_empresa"         , "Value", aDados[02] )

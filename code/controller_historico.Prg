@@ -21,9 +21,9 @@ function alimenta_historico()
 	
 	le_dados( @aDados )
 
-	setProperty("historico", "Text_idchave"         , "Value", aDados[01] )
-	setProperty("historico", "Text_nome"            , "Value", aDados[03] )
-	setProperty("historico", "Edit_historico"       , "Value", aDados[17] )
+	setProperty("historico", "Text_idchave"         , "Value", aDados[01][01] )
+	setProperty("historico", "Text_nome"            , "Value", aDados[01][03] )
+	setProperty("historico", "Edit_historico"       , "Value", aDados[01][17] )
 
 return NIL
 
